@@ -1,4 +1,4 @@
-// Toggle Gallery Visibility
+// Toggle Video Visibility
 document.getElementById('toggle-gallery-button').addEventListener('click', function () {
     const gallery = document.getElementById('gallery');
     if (gallery.style.display === 'none') {
@@ -10,7 +10,6 @@ document.getElementById('toggle-gallery-button').addEventListener('click', funct
     }
 });
 
-// Toggle Video Visibility
 document.getElementById('toggle-video-button').addEventListener('click', function () {
     const video = document.getElementById('video');
     if (video.style.display === 'none') {
@@ -30,35 +29,3 @@ document.addEventListener('scroll', function () {
         divider.classList.add('active');
     }
 });
-
-function isElementInView(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
-
-function slideInParagraphs() {
-    const paragraph1 = document.getElementById('paragraph-1');
-    const paragraph2 = document.getElementById('paragraph-2');
-    const descriptionSection = document.getElementById('description');
-    const rect = descriptionSection.getBoundingClientRect();
-
-    if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
-        if (lastScrollTop > window.scrollY) {
-            // Scrolling up
-            paragraph1.classList.add('in-view');
-            paragraph2.classList.remove('in-view');
-        } else {
-            // Scrolling down
-            paragraph1.classList.remove('in-view');
-            paragraph2.classList.add('in-view');
-        }
-    }
-
-    lastScrollTop = window.scrollY;
-}
-
-let lastScrollTop = 0;
-window.addEventListener('scroll', slideInParagraphs);
