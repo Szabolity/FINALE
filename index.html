@@ -1,111 +1,122 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comp1 Finals</title>
+    <title>Nature's Canvas</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav-container">
-            <img src="images/logo.png" alt="Logo" class="logo">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#description">Description</a></li>
-                <li><a href="#gallery">Images</a></li>
-                <li><a href="#video-section">Video</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="full-page-bg">
-            <h1 class="pacifico-regular right-aligned">
-                <span class="larger-font">Nature's Canvas:</span><br>Explore The Nature's Beauty
-            </h1>
-        </section>
+<header>
+    <nav class="nav-container">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#gallery-section">Images</a></li>
+            <li><a href="#video-section">Video</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section id="description" class="description-section">
-            <div class="description-paragraph" id="paragraph-1">
-                <img src="images/paragraph1.jpg" alt="Nature Image 1" class="paragraph-image">
-                <p class="merriweather-black">
-                    <span class="larger-font bold-text">Welcome to Nature's Canvas</span>,<br>
-                    Where the beauty of the world comes to life through the lens. Our website is dedicated to showcasing breathtaking <a href="https://en.wikipedia.org/wiki/Nature_photography" target="_blank">nature photography</a> that captures the essence of Earth’s wonders. From serene landscapes to vibrant wildlife, each photograph tells a unique story of harmony, resilience, and awe-inspiring beauty. Whether you're a nature enthusiast, aspiring photographer, or someone who appreciates the magic of the natural world, you'll find inspiration and peace in every image.
+<main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1>
+            Nature’s Canvas<br>
+            <span>Exploring the beauty of our world</span>
+        </h1>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section id="description" class="description">
+
+        <div class="content">
+            <img src="images/paragraph1.jpg" alt="Nature">
+            <div class="text">
+                <h2>Welcome to Nature’s Canvas</h2>
+                <p>
+                    Nature’s Canvas is a space dedicated to capturing the raw beauty of the natural world through photography.
+                    Each image tells a story of peace, strength, and wonder — reminding us how powerful and fragile nature truly is.
+                </p>
+                <p>
+                    Learn more about
+                    <a href="https://en.wikipedia.org/wiki/Nature_photography" target="_blank">nature photography</a>
+                    and discover how images connect people to the environment.
                 </p>
             </div>
+        </div>
 
-            <div class="description-paragraph" id="paragraph-2">
-                <p class="merriweather-black right-aligned-text">
-                    <span class="larger-font bold-text">At Nature's Canvas</span>,<br>
-                    We believe that photography has the power to connect people to nature and remind us of the importance of preserving it. Our gallery features the work of passionate photographers who aim to celebrate the splendor of the outdoors and highlight its fragile magnificence. Explore, admire, and join us in cherishing the planet we call home. Learn more about <a href="https://adamsacademy.com/course-cat/environment/environmental-conservation/" target="_blank">environmental conservation</a> and discover how we can protect the world’s natural treasures together.
+        <div class="content reverse">
+            <img src="images/paragraph2.jpg" alt="Environment">
+            <div class="text">
+                <h2>Why Nature Matters</h2>
+                <p>
+                    Photography allows us to appreciate nature beyond what words can describe.
+                    By showcasing landscapes, wildlife, and ecosystems, we hope to inspire awareness and care for our planet.
                 </p>
-                <img src="images/paragraph2.jpg" alt="Nature Image 2" class="paragraph-image">
+                <p>
+                    Discover more about
+                    <a href="https://adamsacademy.com/course-cat/environment/environmental-conservation/" target="_blank">
+                        environmental conservation
+                    </a>
+                    and how we can protect Earth together.
+                </p>
             </div>
-        </section>
+        </div>
 
-        <section id="gallery-section">
-            <button id="toggle-gallery-button">Hide Gallery</button>
-            <div id="gallery">
-                <figure>
-                    <img src="images/mountain.jpg" alt="Mountain">
-                    <figcaption>
-                        <b>Mount Dulang-Dulang</b> (Bukidnon, Philippines):<br>
-                        Majestic peaks and tranquil trails await at Mount Dulang-Dulang, a haven for nature lovers and adventurers alike.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/forest.jpg" alt="Forest">
-                    <figcaption>
-                        <b>Amazon Rainforest</b> (South America):<br>
-                        A breathtaking world of biodiversity, the Amazon Rainforest stands as Earth's lungs and a vital sanctuary for countless species.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/beach.jpg" alt="Beach">
-                    <figcaption>
-                        <b>Boracay Beach</b> (Aklan, Philippines):<br>
-                        Golden sands, crystal-clear waters, and vibrant sunsets—Boracay Beach is paradise found in the heart of the Philippines.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/hills.jpg" alt="Hills">
-                    <figcaption>
-                        <b>Chocolate Hills</b> (Bohol, Philippines):<br>
-                        An iconic landscape of over a thousand perfectly shaped hills, Chocolate Hills is a natural wonder that leaves visitors in awe.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/desert.jpg" alt="Desert">
-                    <figcaption>
-                        <b>Sahara Desert</b> (Africa):<br>
-                        Endless stretches of golden sand and vast, serene landscapes—the Sahara Desert captivates with its raw beauty and vastness.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/waterfall.jpg" alt="Waterfall">
-                    <figcaption>
-                        <b>Pulang Bato Falls</b> (Negros Oriental, Philippines):<br>
-                        A stunning cascade of red-tinted waters, Pulang Bato Falls is a hidden gem surrounded by lush greenery and natural tranquility.
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+    </section>
 
-        <hr id="divider-line">
+    <!-- GALLERY -->
+    <section id="gallery-section">
+        <button id="toggle-gallery">Hide Gallery</button>
 
-        <button id="toggle-video-button">Hide Video</button>
-        <section id="video-section">
-            <video controls class="full-width-video" id="video">
-                <source src="videos/landscape.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
-    </main>
+        <div class="gallery">
+            <figure>
+                <img src="images/mountain.jpg">
+                <figcaption><b>Mount Dulang-Dulang</b><br>Bukidnon, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/forest.jpg">
+                <figcaption><b>Amazon Rainforest</b><br>South America</figcaption>
+            </figure>
+            <figure>
+                <img src="images/beach.jpg">
+                <figcaption><b>Boracay Beach</b><br>Aklan, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hills.jpg">
+                <figcaption><b>Chocolate Hills</b><br>Bohol, Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/desert.jpg">
+                <figcaption><b>Sahara Desert</b><br>Africa</figcaption>
+            </figure>
+            <figure>
+                <img src="images/waterfall.jpg">
+                <figcaption><b>Pulang Bato Falls</b><br>Negros Oriental</figcaption>
+            </figure>
+        </div>
+    </section>
 
-    <script src="scripts.js"></script>
+    <hr class="divider">
+
+    <!-- VIDEO -->
+    <section id="video-section">
+        <button id="toggle-video">Hide Video</button>
+        <video controls>
+            <source src="videos/landscape.mp4" type="video/mp4">
+        </video>
+    </section>
+
+</main>
+
+<script src="scripts.js"></script>
 </body>
 </html>
